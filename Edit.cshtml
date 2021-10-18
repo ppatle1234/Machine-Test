@@ -1,0 +1,23 @@
+﻿@model MachineTest.Models.EmployeeModel
+@{
+    ViewBag.Title = "Edit" ;
+}
+
+<h2>Edit</h2>
+
+<form action="~/Home/Edit" method="post">
+
+    <input type="hidden" name="ProductId" value="@Model.ProductId" />
+
+    <label>ProductName</label>
+    <input type="text" name="ProductName" value="@Model.ProductName" />
+
+    <label>CategoryId</label>
+    <input type="text" name="CategoryId" value="@Model.CategoryId" />
+
+    <label>CategoryName</label>
+    <input type="text" name="CategoryName" value="@Model.CategoryName" />
+
+    <input type="submit" value="Save" class="btn btn-default" />
+</form>
+

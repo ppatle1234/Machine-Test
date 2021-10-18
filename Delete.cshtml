@@ -1,0 +1,23 @@
+﻿@model MachineTest.Models.EmployeeModel
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+@Model.ProductId
+<br />
+@Model.ProductName
+<br />
+@Model.CategoryId
+<br />
+@Model.CategoryName
+
+<form action="~/Home/Delete/@Model.ProductId" method="post">
+
+    <input type="submit" value="Delete" class="btn btn-danger" />
+
+</form>
+
+
+
